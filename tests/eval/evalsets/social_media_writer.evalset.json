@@ -1,0 +1,63 @@
+{
+  "eval_set_id": "novapulse_social_media_writer_evalset",
+  "name": "NovaPulse Enterprise Social Media Writer Golden EvalSet",
+  "description": "ADK evaluation set verifying parallel MCP tool trajectory, brand compliance loop, and HITL publishing gate.",
+  "eval_cases": [
+    {
+      "eval_id": "linkedin_founder_pulsegrid_finops",
+      "conversation": [
+        {
+          "invocation_id": "inv_001",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Write a LinkedIn post as our Founder & CEO (founder_ceo) targeting Enterprise CTOs (enterprise_cto_vp_eng) about cutting Kubernetes waste with PulseGrid for lead_generation."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Why are engineering leaders rethinking how they solve 'Unpredictable multi-cloud Kubernetes compute spend growing 38% YoY'? At NovaPulse Cloud Technologies, PulseGrid cuts multi-cloud Kubernetes waste by 41% in 60 days using SLO-aware autonomous rightsizing. #CloudLeadership #EnterpriseSaaS #NovaPulse"
+              }
+            ],
+            "role": "model"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "fetch_crm_audience_segment_insights",
+                "args": {
+                  "audience_segment_id": "enterprise_cto_vp_eng",
+                  "include_win_metrics": true
+                }
+              },
+              {
+                "name": "query_marketing_campaign_value_propositions",
+                "args": {
+                  "product_line": "PulseGrid",
+                  "intended_outcome": "lead_generation"
+                }
+              },
+              {
+                "name": "retrieve_historic_social_post_benchmarks",
+                "args": {
+                  "platform": "linkedin",
+                  "author_persona": "founder_ceo"
+                }
+              },
+              {
+                "name": "validate_draft_against_brand_guidelines",
+                "args": {
+                  "platform": "linkedin",
+                  "author_persona": "founder_ceo"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

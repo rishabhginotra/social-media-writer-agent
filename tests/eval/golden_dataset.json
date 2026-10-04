@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "suite_name": "NovaPulse Social Media Writer Agent — Golden Evaluation Dataset",
+    "version": "1.0.0",
+    "minimum_passing_score": 0.95
+  },
+  "test_cases": [
+    {
+      "case_id": "eval_001_linkedin_founder_finops",
+      "description": "Founder/CEO LinkedIn post targeting Enterprise CTOs on Kubernetes FinOps with PulseGrid",
+      "user_prompt": "Write a LinkedIn post from our Founder & CEO targeting Enterprise CTOs about cutting multi-cloud Kubernetes waste with PulseGrid to drive lead generation.",
+      "author_persona": "founder_ceo",
+      "audience_segment_id": "enterprise_cto_vp_eng",
+      "platform": "linkedin",
+      "product_line": "PulseGrid",
+      "intended_outcome": "lead_generation",
+      "human_approval_confirmed": false,
+      "expected_trajectory": [
+        "fetch_crm_audience_segment_insights",
+        "query_marketing_campaign_value_propositions",
+        "retrieve_historic_social_post_benchmarks",
+        "validate_draft_against_brand_guidelines",
+        "publish_approved_social_media_post"
+      ],
+      "expected_min_compliance_score": 90,
+      "expected_publication_status": "pending_human_confirmation",
+      "required_substrings": ["PulseGrid", "41%", "#NovaPulse"]
+    },
+    {
+      "case_id": "eval_002_linkedin_architect_zerotrust",
+      "description": "Chief Cloud Architect LinkedIn technical post on eBPF Zero-Trust Security with PulseShield",
+      "user_prompt": "Draft a deeply technical LinkedIn post as our Chief Cloud Architect for Platform SREs about replacing sidecar proxies with PulseShield eBPF zero-trust security for our product launch.",
+      "author_persona": "chief_architect",
+      "audience_segment_id": "platform_sre_architects",
+      "platform": "linkedin",
+      "product_line": "PulseShield",
+      "intended_outcome": "product_launch",
+      "human_approval_confirmed": true,
+      "expected_trajectory": [
+        "fetch_crm_audience_segment_insights",
+        "query_marketing_campaign_value_propositions",
+        "retrieve_historic_social_post_benchmarks",
+        "validate_draft_against_brand_guidelines",
+        "publish_approved_social_media_post"
+      ],
+      "expected_min_compliance_score": 90,
+      "expected_publication_status": "published",
+      "required_substrings": ["PulseShield", "sub-15ms", "#NovaPulse"]
+    },
+    {
+      "case_id": "eval_003_x_twitter_devrel_telemetry",
+      "description": "DevRel Advocate punchy X/Twitter post on OpenTelemetry tail-sampling with PulseFlow",
+      "user_prompt": "Create a punchy X/Twitter post from our Principal Developer Advocate for SREs on eliminating alert fatigue and noisy OpenTelemetry traces using PulseFlow.",
+      "author_persona": "devrel_advocate",
+      "audience_segment_id": "platform_sre_architects",
+      "platform": "x_twitter",
+      "product_line": "PulseFlow",
+      "intended_outcome": "developer_adoption",
+      "human_approval_confirmed": false,
+      "expected_trajectory": [
+        "fetch_crm_audience_segment_insights",
+        "query_marketing_campaign_value_propositions",
+        "retrieve_historic_social_post_benchmarks",
+        "validate_draft_against_brand_guidelines",
+        "publish_approved_social_media_post"
+      ],
+      "expected_min_compliance_score": 90,
+      "expected_publication_status": "pending_human_confirmation",
+      "required_substrings": ["PulseFlow", "68%"]
+    },
+    {
+      "case_id": "eval_004_instagram_vpm_finops_carousel",
+      "description": "VP Product Marketing 5-slide Instagram carousel with mandatory Alt-Text on FinOps unit economics",
+      "user_prompt": "Build an Instagram 5-slide carousel caption from our VP of Product Marketing targeting FinOps Directors about unlocking $1.8M in cloud savings with PulseGrid.",
+      "author_persona": "vp_product_marketing",
+      "audience_segment_id": "finops_cloud_economics",
+      "platform": "instagram",
+      "product_line": "PulseGrid",
+      "intended_outcome": "webinar_registration",
+      "human_approval_confirmed": false,
+      "expected_trajectory": [
+        "fetch_crm_audience_segment_insights",
+        "query_marketing_campaign_value_propositions",
+        "retrieve_historic_social_post_benchmarks",
+        "validate_draft_against_brand_guidelines",
+        "publish_approved_social_media_post"
+      ],
+      "expected_min_compliance_score": 90,
+      "expected_publication_status": "pending_human_confirmation",
+      "required_substrings": ["[Slide 1]", "[Alt-Text Description]", "PulseGrid"]
+    },
+    {
+      "case_id": "eval_005_youtube_community_devrel_poll",
+      "description": "DevRel Advocate YouTube Community interactive poll post with 4 poll options",
+      "user_prompt": "Write a YouTube Community post with a 4-option poll from our DevRel Advocate asking platform engineers about their biggest observability bottleneck while highlighting PulseFlow.",
+      "author_persona": "devrel_advocate",
+      "audience_segment_id": "platform_sre_architects",
+      "platform": "youtube_community",
+      "product_line": "PulseFlow",
+      "intended_outcome": "thought_leadership",
+      "human_approval_confirmed": false,
+      "expected_trajectory": [
+        "fetch_crm_audience_segment_insights",
+        "query_marketing_campaign_value_propositions",
+        "retrieve_historic_social_post_benchmarks",
+        "validate_draft_against_brand_guidelines",
+        "publish_approved_social_media_post"
+      ],
+      "expected_min_compliance_score": 90,
+      "expected_publication_status": "pending_human_confirmation",
+      "required_substrings": ["[Poll Option A]", "[Poll Option B]", "PulseFlow"]
+    },
+    {
+      "case_id": "eval_006_self_correction_loop_remediation",
+      "description": "Verifies LoopAgent self-healing when initial draft contains banned buzzwords ('revolutionary magic', '100% guaranteed')",
+      "user_prompt": "Draft a LinkedIn post for our VP of Product Marketing on PulseGrid whitepaper downloads.",
+      "author_persona": "vp_product_marketing",
+      "audience_segment_id": "finops_cloud_economics",
+      "platform": "linkedin",
+      "product_line": "PulseGrid",
+      "intended_outcome": "whitepaper_download",
+      "human_approval_confirmed": false,
+      "inject_initial_flawed_draft": "Our revolutionary magic AI is a paradigm shift that is 100% guaranteed to crush the competition!",
+      "expected_trajectory": [
+        "fetch_crm_audience_segment_insights",
+        "query_marketing_campaign_value_propositions",
+        "retrieve_historic_social_post_benchmarks",
+        "validate_draft_against_brand_guidelines",
+        " publish_approved_social_media_post"
+      ],
+      "expected_min_compliance_score": 90,
+      "expected_publication_status": "pending_human_confirmation",
+      "required_substrings": ["PulseGrid", "41%", "#NovaPulse"]
+    }
+  ]
+}

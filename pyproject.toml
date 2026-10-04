@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "social-media-writer-agent"
+version = "1.0.0"
+description = "Enterprise Multi-Agent Social Media Writer built with Google ADK, MCP Toolsets, Context Compaction, Model Armor Guardrails, OpenTelemetry Tracing, and Terraform IaC."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.11"
+dependencies = [
+    "google-adk>=1.0.0",
+    "google-genai>=1.0.0",
+    "google-cloud-secret-manager>=2.20.0",
+    "google-cloud-dlp>=3.18.0",
+    "google-cloud-trace>=1.13.0",
+    "google-cloud-logging>=3.10.0",
+    "mcp>=1.2.0",
+    "pydantic>=2.7.0",
+    "opentelemetry-api>=1.25.0",
+    "opentelemetry-sdk>=1.25.0",
+    "opentelemetry-exporter-gcp-trace>=1.6.0",
+    "fastapi>=0.111.0",
+    "uvicorn>=0.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.5.0",
+    "mypy>=1.10.0",
+    "google-agents-cli>=0.1.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.agents-cli]
+project_name = "social-media-writer-agent"
+agent_directory = "app"
+deployment_target = "agent_runtime"
+session_type = "agent_platform_sessions"
+region = "us-central1"
+bq_analytics = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

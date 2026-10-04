@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "source_system": "NovaPulse Marketing Intelligence Database (Demo Synthetic Dataset)",
+    "last_updated": "2026-10-01T00:00:00Z",
+    "version": "1.9"
+  },
+  "campaigns": [
+    {
+      "campaign_id": "camp_pulsegrid_finops_2026",
+      "product_line": "PulseGrid",
+      "campaign_theme": "Autonomous FinOps Without Engineering Friction",
+      "intended_outcomes": ["lead_generation", "webinar_registration", "whitepaper_download"],
+      "core_value_proposition": "Cut multi-cloud Kubernetes waste by 41% in 60 days using SLO-aware autonomous rightsizing—zero manual YAML tuning required.",
+      "verified_proof_points": [
+        "41% average reduction in idle cluster compute spend across 80+ enterprise cohorts",
+        "Zero SLO regressions during automated pod vertical and horizontal scaling",
+        "19-day median payback period verified by independent FinOps audit"
+      ],
+      "approved_ctas": {
+        "lead_generation": "Run our free 5-minute Cluster Waste Diagnostic at novapulse.example.com/diagnostic",
+        "webinar_registration": "Reserve your seat for Thursday's live architecture teardown: novapulse.example.com/live-finops-lab",
+        "whitepaper_download": "Download the 2026 Enterprise Kubernetes FinOps Blueprint: novapulse.example.com/finops-blueprint",
+        "thought_leadership": "How is your team balancing cloud unit economics with P99 reliability this quarter?"
+      }
+    },
+    {
+      "campaign_id": "camp_pulseshield_zerotrust_2026",
+      "product_line": "PulseShield",
+      "campaign_theme": "Zero-Trust eBPF Runtime Security at Cloud Scale",
+      "intended_outcomes": ["product_launch", "developer_adoption", "thought_leadership"],
+      "core_value_proposition": "Enforce kernel-level zero-trust container security and automated SOC2 compliance with sub-15ms P99 latency overhead.",
+      "verified_proof_points": [
+        "Sub-15ms P99 runtime latency overhead using native eBPF probes (no sidecar tax)",
+        "Blocks 99.7% of anomalous container privilege-escalation attempts in real time",
+        "Reduces quarterly compliance evidence collection from 3 weeks to 45 minutes"
+      ],
+      "approved_ctas": {
+        "product_launch": "Explore the PulseShield 3.0 architecture release notes: novapulse.example.com/pulseshield-3",
+        "developer_adoption": "Try the open-source eBPF policy sandbox in 3 CLI commands: novapulse.example.com/ebpf-sandbox",
+        "thought_leadership": "Are sidecar proxies still justifiable for container security in 2026? Share your architecture take below."
+      }
+    },
+    {
+      "campaign_id": "camp_pulseflow_telemetry_2026",
+      "product_line": "PulseFlow",
+      "campaign_theme": "Predictive Incident Prevention & High-Signal OpenTelemetry",
+      "intended_outcomes": ["developer_adoption", "lead_generation", "thought_leadership"],
+      "core_value_proposition": "Eliminate alert fatigue and isolate microservice root causes 68% faster with adaptive OpenTelemetry tail-sampling.",
+      "verified_proof_points": [
+        "68% faster Mean-Time-To-Detect (MTTD) and root-cause isolation across 150+ microservices",
+        "73% reduction in false-positive on-call pager alerts",
+        "52% lower telemetry storage ingestion cost via intelligent tail-based span sampling"
+      ],
+      "approved_ctas": {
+        "developer_adoption": "Grab our production OpenTelemetry Collector config templates: novapulse.example.com/otel-templates",
+        "lead_generation": "See PulseFlow isolate a cascading latency spike in 90 seconds: novapulse.example.com/pulseflow-demo",
+        "thought_leadership": "What is the single noisiest alert in your on-call rotation right now?"
+      }
+    }
+  ]
+}

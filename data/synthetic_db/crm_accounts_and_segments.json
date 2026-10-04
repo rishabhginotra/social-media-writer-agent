@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "source_system": "NovaPulse Enterprise CRM (Demo Synthetic Dataset)",
+    "last_updated": "2026-10-01T00:00:00Z",
+    "version": "2.4"
+  },
+  "audience_segments": [
+    {
+      "segment_id": "enterprise_cto_vp_eng",
+      "segment_name": "Enterprise CTOs & VPs of Engineering",
+      "industry_verticals": ["Financial Services", "Healthcare SaaS", "Global E-Commerce"],
+      "company_size_employees": "2,000 - 25,000+",
+      "top_pain_points": [
+        "Unpredictable multi-cloud Kubernetes compute spend growing 38% YoY",
+        "Alert fatigue causing 42-minute mean-time-to-detect (MTTD) during peak traffic",
+        "Strict SOC2/PCI-DSS zero-trust container compliance audit overhead"
+      ],
+      "key_buying_triggers": [
+        "Board-mandated cloud cost optimization (FinOps)",
+        "Production outage post-mortems",
+        "Multi-region cloud migration initiatives"
+      ],
+      "anonymized_win_metrics": [
+        "41% average reduction in idle Kubernetes cluster spend within 60 days using PulseGrid",
+        "68% faster incident root-cause isolation across 150+ microservices using PulseFlow",
+        "99.995% availability maintained across 14 enterprise FinTech deployments"
+      ],
+      "decision_maker_priorities": [
+        "Measurable ROI within one quarter",
+        "Zero-instrumentation eBPF deployment",
+        "Enterprise-grade RBAC and audit trails"
+      ]
+    },
+    {
+      "segment_id": "platform_sre_architects",
+      "segment_name": "Platform Engineers, SREs & Cloud Architects",
+      "industry_verticals": ["Cloud-Native Tech", "Digital Media", "Gaming Infrastructure"],
+      "company_size_employees": "250 - 10,000",
+      "top_pain_points": [
+        "Manual YAML & Terraform drift across staging and production clusters",
+        "Noisy OpenTelemetry trace pipelines dropping tail-latency spans",
+        "Over-provisioned node pools causing 55% CPU underutilization"
+      ],
+      "key_buying_triggers": [
+        "Internal developer platform (IDP) modernization",
+        "Kubernetes version upgrades and autoscaling bottlenecks",
+        "Adopting OpenTelemetry and eBPF observability standards"
+      ],
+      "anonymized_win_metrics": [
+        "Sub-15ms P99 policy enforcement overhead with PulseShield eBPF runtime",
+        "3.4x faster deployment pipeline validation across multi-cluster fleets",
+        "73% reduction in false-positive pager alerts during on-call rotations"
+      ],
+      "decision_maker_priorities": [
+        "CLI-first developer experience and GitOps compatibility",
+        "Open standards (OpenTelemetry, Prometheus, MCP)",
+        "Transparent architecture without vendor lock-in"
+      ]
+    },
+    {
+      "segment_id": "finops_cloud_economics",
+      "segment_name": "FinOps Directors & Cloud Economics Teams",
+      "industry_verticals": ["Retail & Logistics", "Banking", "Telecommunications"],
+      "company_size_employees": "1,000 - 50,000+",
+      "top_pain_points": [
+        "Lack of unit-cost visibility per tenant and microservice",
+        "Unallocated shared Kubernetes cluster costs exceeding $1.2M annually",
+        "Friction between finance cost-cutting targets and engineering velocity"
+      ],
+      "key_buying_triggers": [
+        "Annual cloud commit renewals",
+        "Gross margin compression from AI/compute workloads",
+        "Chargeback and showback reporting mandates"
+      ],
+      "anonymized_win_metrics": [
+        "$1.8M average annual cloud savings unlocked without throttling workload SLAs",
+        "98.4% cost-allocation accuracy down to individual namespace and pod labels",
+        "19-day median payback period for PulseGrid Autonomous Rightsizing"
+      ],
+      "decision_maker_priorities": [
+        "Automated rightsizing with engineering safety guardrails",
+        "Real-time unit economics dashboards",
+        "Seamless integration with existing billing exports"
+      ]
+    }
+  ]
+}

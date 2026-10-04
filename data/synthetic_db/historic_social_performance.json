@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "source_system": "NovaPulse Historic Social Media Performance Analytics DB (Demo Synthetic Dataset)",
+    "last_updated": "2026-10-01T00:00:00Z",
+    "total_posts_analyzed": 1420
+  },
+  "platform_benchmarks": [
+    {
+      "platform": "linkedin",
+      "persona_id": "founder_ceo",
+      "avg_engagement_rate_pct": 6.8,
+      "avg_click_through_rate_pct": 3.1,
+      "optimal_character_range": [650, 1250],
+      "top_performing_hook_patterns": [
+        "Contrarian boardroom metric (e.g., 'Why we stopped asking engineering teams to cut cloud budgets manually—and saved 41% instead.')",
+        "Before/After customer transformation story with concrete dollar/percentage impact in line 1"
+      ],
+      "winning_structural_traits": [
+        "3 concise bullet points with numeric proof points",
+        "Closing with an open executive discussion question",
+        "3 to 4 industry hashtags at the very bottom"
+      ],
+      "top_historical_post_example": {
+        "post_id": "hist_li_001",
+        "engagement_rate_pct": 9.4,
+        "impressions": 84200,
+        "summary": "Shared how a FinTech customer unlocked $1.8M in annual Kubernetes savings in 60 days using PulseGrid without a single SLO regression."
+      }
+    },
+    {
+      "platform": "linkedin",
+      "persona_id": "chief_architect",
+      "avg_engagement_rate_pct": 7.9,
+      "avg_click_through_rate_pct": 4.2,
+      "optimal_character_range": [700, 1400],
+      "top_performing_hook_patterns": [
+        "Specific P99 latency or CPU utilization bottleneck solved via architectural shift (e.g., eBPF vs sidecars)",
+        "Production post-mortem lesson backed by OpenTelemetry trace metrics"
+      ],
+      "winning_structural_traits": [
+        "Step-by-step architectural breakdown (Problem -> Mechanism -> Benchmark)",
+        "Direct link to technical blueprint or sandbox in CTA",
+        "Zero marketing fluff; concrete engineering terminology"
+      ],
+      "top_historical_post_example": {
+        "post_id": "hist_li_002",
+        "engagement_rate_pct": 11.2,
+        "impressions": 112500,
+        "summary": "Compared sidecar proxy CPU overhead against PulseShield kernel-level eBPF probes, demonstrating sub-15ms P99 latency across 150+ microservices."
+      }
+    },
+    {
+      "platform": "linkedin",
+      "persona_id": "vp_product_marketing",
+      "avg_engagement_rate_pct": 6.2,
+      "avg_click_through_rate_pct": 3.8,
+      "optimal_character_range": [600, 1150],
+      "top_performing_hook_patterns": [
+        "Quantified customer pain point followed by rapid time-to-value metric",
+        "New product capability announcement anchored on practitioner outcomes"
+      ],
+      "winning_structural_traits": [
+        "Clear Before vs. After bulleted list",
+        "Single high-intent CTA link (diagnostic or live lab)",
+        "4 targeted hashtags"
+      ],
+      "top_historical_post_example": {
+        "post_id": "hist_li_003",
+        "engagement_rate_pct": 8.5,
+        "impressions": 69400,
+        "summary": "Highlighted how enterprise SRE teams cut on-call false-positive pager alerts by 73% and isolated root causes 68% faster with PulseFlow."
+      }
+    },
+    {
+      "platform": "x_twitter",
+      "persona_id": "devrel_advocate",
+      "avg_engagement_rate_pct": 5.4,
+      "avg_click_through_rate_pct": 2.9,
+      "optimal_character_range": [160, 275],
+      "top_performing_hook_patterns": [
+        "Punchy 1-line developer truth + concrete metric + CLI/repo CTA",
+        "Short multi-post thread breaking down an OpenTelemetry or Kubernetes optimization"
+      ],
+      "winning_structural_traits": [
+        "Under 260 characters per post",
+        "Maximum 2 hashtags (#Kubernetes #OpenTelemetry)",
+        "Actionable template or sandbox link"
+      ],
+      "top_historical_post_example": {
+        "post_id": "hist_x_004",
+        "engagement_rate_pct": 8.1,
+        "impressions": 53000,
+        "summary": "55% of Kubernetes CPU requests sit idle while on-call engineers drown in YAML drift. PulseGrid rightsizes pods autonomously—cutting cluster waste by 41% with zero SLO regressions."
+      }
+    },
+    {
+      "platform": "instagram",
+      "persona_id": "vp_product_marketing",
+      "avg_engagement_rate_pct": 4.9,
+      "avg_click_through_rate_pct": 1.8,
+      "optimal_character_range": [350, 800],
+      "top_performing_hook_patterns": [
+        "Visual 5-slide architecture carousel breakdown with crisp headline on Slide 1"
+      ],
+      "winning_structural_traits": [
+        "Explicit [Slide 1] to [Slide 5] copy blocks",
+        "Mandatory [Alt-Text Description] for accessibility compliance",
+        "5 to 6 hashtags at the end of the caption"
+      ],
+      "top_historical_post_example": {
+        "post_id": "hist_ig_005",
+        "engagement_rate_pct": 6.7,
+        "impressions": 31200,
+        "summary": "5-slide carousel showing how adaptive OpenTelemetry tail-sampling cuts telemetry storage costs by 52% while speeding up MTTD by 68%."
+      }
+    },
+    {
+      "platform": "youtube_community",
+      "persona_id": "devrel_advocate",
+      "avg_engagement_rate_pct": 7.1,
+      "avg_click_through_rate_pct": 2.4,
+      "optimal_character_range": [220, 550],
+      "top_performing_hook_patterns": [
+        "Direct engineering trade-off question paired with a 4-option interactive poll"
+      ],
+      "winning_structural_traits": [
+        "Includes [Poll Option A] through [Poll Option D]",
+        "References a concrete benchmark in the setup paragraph"
+      ],
+      "top_historical_post_example": {
+        "post_id": "hist_yt_006",
+        "engagement_rate_pct": 10.3,
+        "impressions": 44800,
+        "summary": "Polled 4,200 cloud engineers on their biggest Kubernetes bottleneck (Idle Compute Cost vs Alert Fatigue vs Compliance Audits vs YAML Drift)."
+      }
+    }
+  ]
+}
